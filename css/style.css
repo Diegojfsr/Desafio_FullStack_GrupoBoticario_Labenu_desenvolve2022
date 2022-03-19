@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*Zera as configurações padrao do navegador*/
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body{
+    background: #6ddad3; /*Fundo azul bacground*/
+}
+
+
+/* ----------------------INICIO HEADER------------------------*/
+.header{
+    background: #132235;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem ;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 5rem;
+}
+
+.header .navbar a{
+    padding: .5rem ;
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color: #6ddad3;
+    padding-bottom: .5rem;  
+}
+
+/* ----------------------FINAL HEADER-----------------------*/
+
+
+/* ----------------------INICIO SOBRE------------------------*/
+.sobre{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem ;
+    background-size: cover;
+    background-position: center;
+}
+
+.sobre .content h3{
+    font-size: 4rem;
+    color:#fff;
+}
+
+.sobre .content h4{
+    font-size: 1.9rem;
+    color:#fff;
+}
+
+.sobre .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color:#eee;
+    
+}
+/* ----------------------FINAL SOBRE------------------------*/
+
+
+
+
+
+
+
+
+
+
