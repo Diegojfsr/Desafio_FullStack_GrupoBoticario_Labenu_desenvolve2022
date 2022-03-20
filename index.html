@@ -21,13 +21,10 @@
     <!-- Inicio Header  -->
     <header class="header">  <!--Estacia a class header  no arquivo css: .header -->
 
-        <a href="#" class="logo"> 
             <img src="img/logo.png"> <!--Estacia a class logo no arquivo css: .header .logo img -->
-        </a>
 
         <nav class="navbar"> 
-            <a href="#home">Home</a>        <!--Estacia a class navbar no arquivo css: .header .navbar a-->
-            <a href="#about">Sobre</a>      <!--Estacia a class navbar no arquivo css: .header .navbar a-->
+            <a href="#sobre">Sobre</a>      <!--Estacia a class navbar no arquivo css: .header .navbar a-->
             <a href="#contact">Contact</a>  <!--Estacia a class navbar no arquivo css: .header .navbar a-->
         </nav>
 
@@ -35,10 +32,10 @@
     <!-- Final Header -->
 
 
-    <!-- Inicio Home  -->
+    <!-- Inicio Sobre  -->
 
-    <section class="sobre" id="sobre">
-        <div class="content">
+    <section class="sobre">  <!--Tag class sobre-->
+        <div class="content">  <!--Tag class conteudo-->
             <h3> Quem Somos </h3>
                 <h4> F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. </h4>
                 <p> Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara 
@@ -47,9 +44,40 @@
         </div>
     </section>
 
-    <!-- Final Home -->
+    <!-- Final Sobre -->
 
 
+<!-- Inicio Contato  -->
+
+<section class="contact">  <!--Tag class contact-->
+    <div class="content">   <!--Tag class conteudo-->
+
+        <form action="">
+            <h2> Nos mande uma mensagem </h2>
+        
+            <div class="input">
+              <input required type="text" />
+              <label>Nome</label>
+              <span class="error"></span>
+            </div>
+        
+        
+            <div class="input">
+              <input required type="email" />
+              <label>Email</label>
+              <span class="error"></span>
+            </div>
+        
+            <button type="submit">Enviar</button>
+        
+          </form>
+
+
+
+    </div>
+</section>
+
+<!-- Final Contato -->
 
 
 
@@ -62,5 +90,7 @@
 
 
 </body>
+
+<script src="script.js"></script>
 
 </html>

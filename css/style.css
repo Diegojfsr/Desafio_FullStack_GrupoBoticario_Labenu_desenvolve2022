@@ -25,12 +25,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem ;
+    padding: 1.5rem ;
     top:0; left: 0; right: 0;
     z-index: 1000;
 }
 
-.header .logo img{
+.header img{
     height: 5rem;
 }
 
@@ -75,6 +75,102 @@ body{
     
 }
 /* ----------------------FINAL SOBRE------------------------*/
+
+
+
+/* ----------------------INICIO CONTATO------------------------*/
+
+form {
+    /*background: #132235;*/
+    padding: 32px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h2 {   /*Nos mande uma mensagem*/
+    margin-bottom: 32px;
+    font-size: 1.7rem;
+    color:#fff;
+}
+
+div.input {     /*texto dentro do box input*/
+    margin-bottom: 24px;    /*Espaço superior*/
+    position: relative;
+    width: 100%;    /*input ocupa 100% o tamnaho do box input*/
+    padding: 16px 0;  
+}
+
+input {
+    /* box */
+    width: 100%;    /*input ocupa 100% do tamanho do container*/
+    padding: 16px 0;
+    border:none;    /*input sem borda*/
+    border-bottom: 1px solid #132235;  /*Apenas a borda de baixo*/
+    background-color: transparent;  /*Prenchimento do input*/
+    outline: none;
+    /* text */
+    color: #132235;     /*cor do testo que sera digitado no input*/
+    font-size: 1em;
+    text-align: left;
+}
+
+button {
+    margin-top: 16px;
+    background-color: #132235;
+        /* box */
+        width: 10%; /*Tamanho do boton*/
+        padding: 16px 0;
+        /* text */
+        color:#fff;  /*Cor do enviar*/
+        font-size: 1em;
+}
+
+input ~ label {     /*texto dentro do box input*/
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: #132235;     /*Cor do texto  nome e email*/
+    transition: .4s;
+}
+
+input:focus ~ label,    /*Dispara a animação do label, subido o texto nome e email*/
+input:valid ~ label {  /*Verifica se o campo label e valido, se nao for o texto retorna a posição original e chama a mensagem de erro*/
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+.input span.error { /*Mensagens de erro relacionado com o javascript*/
+    display: flex;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {  /*Mensagens de erro relacionado com o javascript*/
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+/* ----------------------FINAL CONTATO------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
