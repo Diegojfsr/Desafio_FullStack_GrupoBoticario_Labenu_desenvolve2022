@@ -47,50 +47,52 @@
     <!-- Final Sobre -->
 
 
-<!-- Inicio Contato  -->
+    <!-- Inicio Contato  -->
+    <section class="contact">
+        <h4> Nos mande uma mensagem.</h4>
+        <div class="content"> 
+            
+            <form action="" method="POST" class="form" >
 
-<section class="contact">  <!--Tag class contact-->
-    <div class="content">   <!--Tag class conteudo-->
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required />
 
-        <form action="">
-            <h2> Nos mande uma mensagem </h2>
-        
-            <div class="input">
-              <input required type="text" />
-              <label>Nome</label>
-              <span class="error"></span>
-            </div>
-        
-        
-            <div class="input">
-              <input required type="email" />
-              <label>Email</label>
-              <span class="error"></span>
-            </div>
-        
-            <button type="submit">Enviar</button>
-        
-          </form>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="" />
+                    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Final Contato -->
 
 
 
+<!-- Inicio Footer  -->
+
+<section class="footer">
+    <h4> Nos siga nas midias sociais. </h4>
+    <div class="midias">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
     </div>
+    <div class="credit"> Criado por DiegoJfsr para fins didaticos | Grupo Boticario e Labenu, Programa Desenvolve 2022. </span> </div>
 </section>
 
-<!-- Final Contato -->
+<!-- Final Footer -->
 
 
-
-
-
-
-
-
-
-
+<!-- Link Arquivo js -->
+<script src="js/script.js"></script>
 
 </body>
-
-<script src="script.js"></script>
 
 </html>

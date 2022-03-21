@@ -72,7 +72,6 @@ body{
     font-size: 1.5rem;
     font-weight: lighter;
     color:#eee;
-    
 }
 /* ----------------------FINAL SOBRE------------------------*/
 
@@ -80,82 +79,131 @@ body{
 
 /* ----------------------INICIO CONTATO------------------------*/
 
-form {
-    /*background: #132235;*/
-    padding: 32px 64px;
+.contact h4{
+  font-size: 1.5rem;
+  color:#fff;
+  font-weight: lighter;
+}
+
+.contact{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    align-items: center;
+    padding: 2.5rem ;
+    background-size: cover;
+    background-position: center;
 }
 
-form h2 {   /*Nos mande uma mensagem*/
-    margin-bottom: 32px;
-    font-size: 1.7rem;
-    color:#fff;
-}
+.form {
+    
+   /* max-width: 32rem;*//*tamanho  do form*/
+    font-size: 1.125rem;
+   /* background: #a5c7f3;*/
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+   
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+   /* display: block;*/
+    width: 100%;/*tamanho do conteudo dentro do form*/
 
-div.input {     /*texto dentro do box input*/
-    margin-bottom: 24px;    /*Espaço superior*/
-    position: relative;
-    width: 100%;    /*input ocupa 100% o tamnaho do box input*/
-    padding: 16px 0;  
-}
-
-input {
-    /* box */
-    width: 100%;    /*input ocupa 100% do tamanho do container*/
-    padding: 16px 0;
-    border:none;    /*input sem borda*/
-    border-bottom: 1px solid #132235;  /*Apenas a borda de baixo*/
-    background-color: transparent;  /*Prenchimento do input*/
+  }
+  
+  .form label {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input, .form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+    
+  }
+  
+  .form textarea {
+    min-height: 13rem;
+    resize: vertical;
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
     outline: none;
-    /* text */
-    color: #132235;     /*cor do testo que sera digitado no input*/
-    font-size: 1em;
-    text-align: left;
-}
-
-button {
-    margin-top: 16px;
-    background-color: #132235;
-        /* box */
-        width: 10%; /*Tamanho do boton*/
-        padding: 16px 0;
-        /* text */
-        color:#fff;  /*Cor do enviar*/
-        font-size: 1em;
-}
-
-input ~ label {     /*texto dentro do box input*/
-    position: absolute;
-    top: 16px;
-    left: 0;
-    color: #132235;     /*Cor do texto  nome e email*/
-    transition: .4s;
-}
-
-input:focus ~ label,    /*Dispara a animação do label, subido o texto nome e email*/
-input:valid ~ label {  /*Verifica se o campo label e valido, se nao for o texto retorna a posição original e chama a mensagem de erro*/
-    transform: translateY(-24px);
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-}
-
-.input span.error { /*Mensagens de erro relacionado com o javascript*/
-    display: flex;
-    padding: 0;
-    background-color: rgba(255, 0, 0, 0.2);
-}
-
-.input span.error.active {  /*Mensagens de erro relacionado com o javascript*/
-    border: 1px solid red;
-    padding: 0.4em;
-}
-
+    border-color: #b1c4df;  /*cor hover borda input*/
+    box-shadow: 0 0 0 3px #6c7b8f;  /*cor hover sombra input*/
+  }
+  
+  .form button {
+    display: block;
+    padding: 1rem;
+    background: #132235;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .form button:hover, .form button:focus {
+    outline: none;
+    color: #132235;    /*cor text boton*/
+    background: #e4faf8; /*cor hover boton*/
+    border-color: #b1c4df; /*cor hover borda boton*/
+    box-shadow: 0 0 0 3px #6c7b8f;  /*cor hover sombra boton*/
+  }
 /* ----------------------FINAL CONTATO------------------------*/
 
 
 
+/* ----------------------INICIO FOOTER-------------------------*/
+.footer{
+  background: #132235; 
+  text-align: center;
+  padding:1.5rem;
+}
+
+.footer h4{
+  font-size: 1.5rem;
+  color:#fff;
+  font-weight: lighter;
+}
+.footer .midias{
+  margin: 1px;
+}
+
+.footer .midias a{ /*icons midias sociais*/
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color:#fff;
+  margin: 1px;
+  border-radius: 50%;
+}
+
+.footer .credit{  /*Criado por Diegojfsr para fins didaticos*/
+  font-size: 1rem;
+  color:#fff;
+  font-weight: lighter;
+
+}
+
+/* ----------------------FINAL FOOTER-------------------------*/
 
 
 
